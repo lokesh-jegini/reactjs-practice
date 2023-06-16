@@ -19,3 +19,24 @@ In this case, clicking the element with the onClick event will trigger the anony
 
 events--(36-46):-https://youtu.be/tnsVz5aHybA
 links:-https://youtu.be/4ERMa1HiHaE 
+
+------------------------------event listiner property
+ var element = document.querySelector('button');
+
+ 1)element will stores the button element in object format
+ 2)so now element will stores one object
+ 3)for element we aplly dot method for the acess properties and method
+
+
+ -------------------addEventListiner method------------ (here i discuseed advantages )
+  console.log(propertyButton);
+    propertyButton.addEventListener('click', () => {
+    
+      alert('property button clicked');
+    });
+    propertyButton.addEventListener('mouseover', () => {
+     
+      alert('property button clicked');
+    });
+
+    1)when we use addeventlistiner method for the same element to give  more  event listiners
