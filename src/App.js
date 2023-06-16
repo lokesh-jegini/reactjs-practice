@@ -2,10 +2,21 @@
 import './App.css';
 
 function App() {
+  const handleClick = () => { 
+    alert('clicked');
+  }
   return (
     <div className="App">
-      <h1>Event Listiner</h1>
+        <button onClick={handleClick}>handleClick</button>
+      {/* <button onClick={handleClick()}>handleClick()</button> */}
+      <button onClick={() => {
+        handleClick();
+      }}>ananymous callback</button>
+        <button onClick={function loki() {
+        handleClick();
+      }}>named callback</button>
     </div>
+    
   );
 }
 
