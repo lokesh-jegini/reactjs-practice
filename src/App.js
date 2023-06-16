@@ -7,33 +7,12 @@ function App() {
   }
 
   useEffect(() => {
-    // const propertyButton1 = document.querySelector('button');
-    // console.log(propertyButton1);
-    // propertyButton.addEventListener('click', () => {
-    //   debugger;
-    //   alert('property button clicked');
-    // });
-    const propertyButton = document.querySelector('#property-button');
-    // propertyButton.onClick = () => { 
-    //   alert('property button clicked');
-    // }
-    console.log(propertyButton);
-    propertyButton.addEventListener('click', () => {
     
-      alert('property button clicked');
+    const propertyButton = document.getElementById('property-button');
+    propertyButton.addEventListener('click', (k) => {
+    console.log(k);
+      // alert('property button clicked');
     });
-    propertyButton.addEventListener('mouseover', () => {
-     
-      alert('property button clicked');
-    });
-
-
-    return () => {
-      propertyButton.removeEventListener('click', () => {
-        debugger;
-        alert('property button clicked');
-      });
-    };
   }, []);
 
   return (
