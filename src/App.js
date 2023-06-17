@@ -1,6 +1,7 @@
 import React, { useState} from 'react';
 import { Users } from './Users';
 import './App.css';
+import Table from './Table';
 
 function App() {
  
@@ -12,14 +13,7 @@ const [searchTerm, setSearchTerm] = useState("");
         setSearchTerm(event.target.value);
         console.log(searchTerm  )
       }}/>
-      <ul className="list">
-        {
-          Users.filter((user)=>{ return user.first_name.toLowerCase().includes(searchTerm)}).map((user) => { 
-            return <li className="list-item" key={ user.id}>{ user.first_name}</li>
-          })
-        }
-       
-      </ul>
+      <Table data={ Users} />
     </div>
   );
 }
