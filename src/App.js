@@ -1,6 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import React, { useState} from 'react';
 import { Users } from './Users';
+=======
+import logo from './logo.svg';
+>>>>>>> parent of eeea80b (basic-react-template)
 =======
 import logo from './logo.svg';
 >>>>>>> parent of eeea80b (basic-react-template)
@@ -13,6 +17,7 @@ const [searchTerm, setSearchTerm] = useState("");
   return (
     <div className="App">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <input className="" type="text" placeholder="search...." onChange={(event) => {
         event.preventDefault();
         setSearchTerm(event.target.value);
@@ -20,6 +25,8 @@ const [searchTerm, setSearchTerm] = useState("");
       }}/>
       <Table data={ Users} />
 =======
+=======
+>>>>>>> parent of eeea80b (basic-react-template)
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -34,6 +41,9 @@ const [searchTerm, setSearchTerm] = useState("");
           Learn React
         </a>
       </header>
+<<<<<<< HEAD
+>>>>>>> parent of eeea80b (basic-react-template)
+=======
 >>>>>>> parent of eeea80b (basic-react-template)
     </div>
   );
